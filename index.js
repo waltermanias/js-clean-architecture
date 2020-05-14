@@ -6,6 +6,7 @@ const router = express.Router();
 module.exports = () => {
   const router = new SignUpRouter();
   router.post("/signup", new ExpressRouterAdapter.adapt(router));
+  
 };
 
 class ExpressRouterAdapter {

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest --watchAll",
+    "test:staged": "jest"
   },
   "standard": {
     "env": [
@@ -16,10 +17,12 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.13"
+    "mongoose": "^5.9.13",
+    "only": "0.0.2"
   },
   "devDependencies": {
     "jest": "^26.0.1",
+    "lint-staged": "^10.2.2",
     "standard": "^14.3.4"
   }
 }
